@@ -8,6 +8,7 @@ public class Sonic : MonoBehaviour
     private SpriteRenderer sr;
     private Animator anim;
     private float speed;
+    private bool isGrounded;
 
     // Start is called before the first frame update
     void Start()
@@ -20,21 +21,32 @@ public class Sonic : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        detectMovement();
+        flipCharacter();
+        detectJump();
+    }
+
+    private void OnCollisionEnter2D(Collision2D collision)
+    {
+        isGrounded = true;
+    }
+
+    private void detectMovement()
+    {
         float h = Input.GetAxis("Horizontal");
-        //float v = Input.GetAxis("Vertical");
-
         this.speed = h * 15 * Time.deltaTime;
-        print(this.speed);
-        this.anim.SetFloat("Speed", Mathf.Abs(speed));
-        
-
         transform.Translate(new Vector3(speed, 0, 0));
+        this.anim.SetFloat("Speed", Mathf.Abs(speed));
+    }
 
+    private void flipCharacter()
+    {
         if (Input.GetKey(KeyCode.RightArrow))
         {
             this.sr.flipX = false;
             this.anim.SetBool("isClicking", true);
-        }else if (Input.GetKey(KeyCode.LeftArrow))
+        }
+        else if (Input.GetKey(KeyCode.LeftArrow))
         {
             this.sr.flipX = true;
             this.anim.SetBool("isClicking", true);
@@ -43,6 +55,14 @@ public class Sonic : MonoBehaviour
         {
             this.anim.SetBool("isClicking", false);
         }
+    }
 
+    private void detectJump()
+    {
+        if ((Input.GetKeyDown(KeyCode.UpArrow) || Input.GetKeyDown(KeyCode.Space)) && isGrounded)
+        {
+            this.rb.AddForce(new Vector2(0,8), ForceMode2D.Impulse);
+            isGrounded = false;
+        }
     }
 }
