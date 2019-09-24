@@ -61,7 +61,7 @@ public class Sonic : MonoBehaviour
     {
         if ((Input.GetKeyDown(KeyCode.UpArrow) || Input.GetKeyDown(KeyCode.Space)) && isGrounded)
         {
-            this.rb.AddForce(new Vector2(0,8), ForceMode2D.Impulse);
+            this.rb.velocity = Vector2.up * 8;
             isGrounded = false;
         }
     }
