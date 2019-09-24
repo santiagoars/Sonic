@@ -1,0 +1,845 @@
+fileFormatVersion: 2
+guid: 2996436c15c3fc242b3f043d98a7b368
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: hd_fied_sonic_sprites_wip_2_by_cansin13art-d8o4n5a_0
+    21300002: hd_fied_sonic_sprites_wip_2_by_cansin13art-d8o4n5a_1
+    21300004: hd_fied_sonic_sprites_wip_2_by_cansin13art-d8o4n5a_2
+    21300006: hd_fied_sonic_sprites_wip_2_by_cansin13art-d8o4n5a_3
+    21300008: hd_fied_sonic_sprites_wip_2_by_cansin13art-d8o4n5a_4
+    21300010: hd_fied_sonic_sprites_wip_2_by_cansin13art-d8o4n5a_5
+    21300012: hd_fied_sonic_sprites_wip_2_by_cansin13art-d8o4n5a_6
+    21300014: hd_fied_sonic_sprites_wip_2_by_cansin13art-d8o4n5a_7
+    21300016: hd_fied_sonic_sprites_wip_2_by_cansin13art-d8o4n5a_8
+    21300018: hd_fied_sonic_sprites_wip_2_by_cansin13art-d8o4n5a_9
+    21300020: hd_fied_sonic_sprites_wip_2_by_cansin13art-d8o4n5a_10
+    21300022: hd_fied_sonic_sprites_wip_2_by_cansin13art-d8o4n5a_11
+    21300024: hd_fied_sonic_sprites_wip_2_by_cansin13art-d8o4n5a_12
+    21300026: hd_fied_sonic_sprites_wip_2_by_cansin13art-d8o4n5a_13
+    21300028: hd_fied_sonic_sprites_wip_2_by_cansin13art-d8o4n5a_14
+    21300030: hd_fied_sonic_sprites_wip_2_by_cansin13art-d8o4n5a_15
+    21300032: hd_fied_sonic_sprites_wip_2_by_cansin13art-d8o4n5a_16
+    21300034: hd_fied_sonic_sprites_wip_2_by_cansin13art-d8o4n5a_17
+    21300036: hd_fied_sonic_sprites_wip_2_by_cansin13art-d8o4n5a_18
+    21300038: hd_fied_sonic_sprites_wip_2_by_cansin13art-d8o4n5a_19
+    21300040: hd_fied_sonic_sprites_wip_2_by_cansin13art-d8o4n5a_20
+    21300042: hd_fied_sonic_sprites_wip_2_by_cansin13art-d8o4n5a_21
+    21300044: hd_fied_sonic_sprites_wip_2_by_cansin13art-d8o4n5a_22
+    21300046: hd_fied_sonic_sprites_wip_2_by_cansin13art-d8o4n5a_23
+    21300048: hd_fied_sonic_sprites_wip_2_by_cansin13art-d8o4n5a_24
+    21300050: hd_fied_sonic_sprites_wip_2_by_cansin13art-d8o4n5a_25
+    21300052: hd_fied_sonic_sprites_wip_2_by_cansin13art-d8o4n5a_26
+    21300054: hd_fied_sonic_sprites_wip_2_by_cansin13art-d8o4n5a_27
+    21300056: hd_fied_sonic_sprites_wip_2_by_cansin13art-d8o4n5a_28
+    21300058: hd_fied_sonic_sprites_wip_2_by_cansin13art-d8o4n5a_29
+    21300060: hd_fied_sonic_sprites_wip_2_by_cansin13art-d8o4n5a_30
+    21300062: hd_fied_sonic_sprites_wip_2_by_cansin13art-d8o4n5a_31
+    21300064: hd_fied_sonic_sprites_wip_2_by_cansin13art-d8o4n5a_32
+    21300066: hd_fied_sonic_sprites_wip_2_by_cansin13art-d8o4n5a_33
+    21300068: hd_fied_sonic_sprites_wip_2_by_cansin13art-d8o4n5a_34
+  externalObjects: {}
+  serializedVersion: 7
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: -1
+    mipBias: -100
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 50
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  platformSettings:
+  - serializedVersion: 2
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+  - serializedVersion: 2
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+  - serializedVersion: 2
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: hd_fied_sonic_sprites_wip_2_by_cansin13art-d8o4n5a_0
+      rect:
+        serializedVersion: 2
+        x: 12
+        y: 272
+        width: 28
+        height: 39
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ecc772571742e4c51aa4c82c1bdfebc9
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hd_fied_sonic_sprites_wip_2_by_cansin13art-d8o4n5a_1
+      rect:
+        serializedVersion: 2
+        x: 47
+        y: 272
+        width: 28
+        height: 39
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d91c4c7f1353d4c51920aac4f84d7d9a
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hd_fied_sonic_sprites_wip_2_by_cansin13art-d8o4n5a_2
+      rect:
+        serializedVersion: 2
+        x: 80
+        y: 272
+        width: 27
+        height: 39
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 54c37b584248a43898ce03a9f801b693
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hd_fied_sonic_sprites_wip_2_by_cansin13art-d8o4n5a_3
+      rect:
+        serializedVersion: 2
+        x: 111
+        y: 272
+        width: 27
+        height: 39
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8b86245cc2a4b484b881e667f5f22619
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hd_fied_sonic_sprites_wip_2_by_cansin13art-d8o4n5a_4
+      rect:
+        serializedVersion: 2
+        x: 141
+        y: 272
+        width: 27
+        height: 39
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8c04103a382cc46b6ab493250afb742a
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hd_fied_sonic_sprites_wip_2_by_cansin13art-d8o4n5a_5
+      rect:
+        serializedVersion: 2
+        x: 171
+        y: 272
+        width: 27
+        height: 39
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c4c52c175318c4ba3b883647d920acf3
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hd_fied_sonic_sprites_wip_2_by_cansin13art-d8o4n5a_6
+      rect:
+        serializedVersion: 2
+        x: 201
+        y: 272
+        width: 28
+        height: 39
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 817f34927e02b4130aca022e679820b8
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hd_fied_sonic_sprites_wip_2_by_cansin13art-d8o4n5a_7
+      rect:
+        serializedVersion: 2
+        x: 231
+        y: 272
+        width: 27
+        height: 39
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 276844b65dd5045d7929e092458310bc
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hd_fied_sonic_sprites_wip_2_by_cansin13art-d8o4n5a_8
+      rect:
+        serializedVersion: 2
+        x: 317
+        y: 258
+        width: 34
+        height: 43
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9b45a7b5a721b4ddd99859fd52e79ab1
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hd_fied_sonic_sprites_wip_2_by_cansin13art-d8o4n5a_9
+      rect:
+        serializedVersion: 2
+        x: 13
+        y: 227
+        width: 28
+        height: 38
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 63ccf0f7f3136436085fcb6e91922788
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hd_fied_sonic_sprites_wip_2_by_cansin13art-d8o4n5a_10
+      rect:
+        serializedVersion: 2
+        x: 47
+        y: 227
+        width: 27
+        height: 38
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8243088e20c0c499c8c2c44bdb0873d3
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hd_fied_sonic_sprites_wip_2_by_cansin13art-d8o4n5a_11
+      rect:
+        serializedVersion: 2
+        x: 15
+        y: 183
+        width: 27
+        height: 37
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a9b1a27478a5843238a1880ca38183e2
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hd_fied_sonic_sprites_wip_2_by_cansin13art-d8o4n5a_12
+      rect:
+        serializedVersion: 2
+        x: 44
+        y: 183
+        width: 37
+        height: 37
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 465b38b559f2c4a8bb46ab89e54e84e0
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hd_fied_sonic_sprites_wip_2_by_cansin13art-d8o4n5a_13
+      rect:
+        serializedVersion: 2
+        x: 83
+        y: 183
+        width: 36
+        height: 38
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0eda948ac0ba94e39b1a0d34eb671b97
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hd_fied_sonic_sprites_wip_2_by_cansin13art-d8o4n5a_14
+      rect:
+        serializedVersion: 2
+        x: 121
+        y: 183
+        width: 26
+        height: 37
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 85fe1148748bf4e61997bb30b427d316
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hd_fied_sonic_sprites_wip_2_by_cansin13art-d8o4n5a_15
+      rect:
+        serializedVersion: 2
+        x: 152
+        y: 183
+        width: 26
+        height: 37
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1dbc5cb79e9234cc78a67d4bfe5e954a
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hd_fied_sonic_sprites_wip_2_by_cansin13art-d8o4n5a_16
+      rect:
+        serializedVersion: 2
+        x: 181
+        y: 183
+        width: 36
+        height: 37
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c34b4a417e5a94b3791faa584cd2ba26
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hd_fied_sonic_sprites_wip_2_by_cansin13art-d8o4n5a_17
+      rect:
+        serializedVersion: 2
+        x: 220
+        y: 183
+        width: 30
+        height: 38
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5f27c211ad69c41df8e8e50ab4cfccac
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hd_fied_sonic_sprites_wip_2_by_cansin13art-d8o4n5a_18
+      rect:
+        serializedVersion: 2
+        x: 253
+        y: 183
+        width: 26
+        height: 37
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e81b6292ea86c4da0952ef900469cb7d
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hd_fied_sonic_sprites_wip_2_by_cansin13art-d8o4n5a_19
+      rect:
+        serializedVersion: 2
+        x: 15
+        y: 136
+        width: 27
+        height: 37
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 70ee19fab649149b0907a70c0e33607f
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hd_fied_sonic_sprites_wip_2_by_cansin13art-d8o4n5a_20
+      rect:
+        serializedVersion: 2
+        x: 52
+        y: 136
+        width: 32
+        height: 38
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 18b18c453485446f0942f1fa73b4d35c
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hd_fied_sonic_sprites_wip_2_by_cansin13art-d8o4n5a_21
+      rect:
+        serializedVersion: 2
+        x: 92
+        y: 140
+        width: 41
+        height: 35
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5764b53489b484ccb841fecce324007b
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hd_fied_sonic_sprites_wip_2_by_cansin13art-d8o4n5a_22
+      rect:
+        serializedVersion: 2
+        x: 148
+        y: 136
+        width: 37
+        height: 38
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 96af8cce841d2403cac0951f8bc0b310
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hd_fied_sonic_sprites_wip_2_by_cansin13art-d8o4n5a_23
+      rect:
+        serializedVersion: 2
+        x: 201
+        y: 136
+        width: 24
+        height: 37
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9aa2707fced344d839493f0548bac1e4
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hd_fied_sonic_sprites_wip_2_by_cansin13art-d8o4n5a_24
+      rect:
+        serializedVersion: 2
+        x: 229
+        y: 136
+        width: 34
+        height: 38
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 860340b4cea804b0da2cc34ea6855adb
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hd_fied_sonic_sprites_wip_2_by_cansin13art-d8o4n5a_25
+      rect:
+        serializedVersion: 2
+        x: 266
+        y: 140
+        width: 41
+        height: 35
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6fb2264499a8946778ac1fb839cb89b3
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hd_fied_sonic_sprites_wip_2_by_cansin13art-d8o4n5a_26
+      rect:
+        serializedVersion: 2
+        x: 310
+        y: 136
+        width: 36
+        height: 38
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3490c813d165348aaaf299758dc3028d
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hd_fied_sonic_sprites_wip_2_by_cansin13art-d8o4n5a_27
+      rect:
+        serializedVersion: 2
+        x: 14
+        y: 93
+        width: 32
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d99d8cb9b52014bd8b417686291c1cba
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hd_fied_sonic_sprites_wip_2_by_cansin13art-d8o4n5a_28
+      rect:
+        serializedVersion: 2
+        x: 52
+        y: 93
+        width: 33
+        height: 37
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8b374f2867d90428ebeb53143f8e7658
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hd_fied_sonic_sprites_wip_2_by_cansin13art-d8o4n5a_29
+      rect:
+        serializedVersion: 2
+        x: 89
+        y: 93
+        width: 32
+        height: 37
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0c77abc2598164997985abf4ed5ed1a7
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hd_fied_sonic_sprites_wip_2_by_cansin13art-d8o4n5a_30
+      rect:
+        serializedVersion: 2
+        x: 125
+        y: 93
+        width: 32
+        height: 37
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e0702d521d9a14b2e9b2ecf4a5f525b7
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hd_fied_sonic_sprites_wip_2_by_cansin13art-d8o4n5a_31
+      rect:
+        serializedVersion: 2
+        x: 10
+        y: 53
+        width: 40
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 77036a8e886fd4ac7b8c861a172cdda2
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hd_fied_sonic_sprites_wip_2_by_cansin13art-d8o4n5a_32
+      rect:
+        serializedVersion: 2
+        x: 53
+        y: 53
+        width: 40
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b5e02f40d662d4a07b875b305295f93e
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hd_fied_sonic_sprites_wip_2_by_cansin13art-d8o4n5a_33
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 53
+        width: 40
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5a10a55bd1bf841e597593e766aae8cc
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hd_fied_sonic_sprites_wip_2_by_cansin13art-d8o4n5a_34
+      rect:
+        serializedVersion: 2
+        x: 139
+        y: 53
+        width: 39
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 07f925a72fc274f98bd761f5cbb9154a
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: f2e6e7b07893a4439b59b45558406ccb
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
