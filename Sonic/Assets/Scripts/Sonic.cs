@@ -35,19 +35,23 @@ public class Sonic : MonoBehaviour
         flipCharacter();
         detectJump();
         grounded();
+        isDead();
 
-        this.scoreDisplay.text = this.score.ToString();
+        this.scoreDisplay.text = "RINGS:" + this.score.ToString();
     }
 
     private void OnCollisionEnter2D(Collision2D collision)
     {
         isGrounded = true;
+    }
 
+    private void OnTriggerEnter2D(Collider2D collision)
+    {
         if (collision.transform.tag.Equals("ring"))
         {
             this.score++;
         }
-    }    
+    }
 
     private void detectMovement()
     {
@@ -61,21 +65,23 @@ public class Sonic : MonoBehaviour
         }
     }
 
+    private void isDead()
+    {
+        if (transform.position.y < -14)
+        {
+            respawn();
+        }
+    }
+
     private void flipCharacter()
     {
         if (Input.GetKey(KeyCode.RightArrow))
         {
             this.sr.flipX = false;
-            this.anim.SetBool("isClicking", true);
         }
         else if (Input.GetKey(KeyCode.LeftArrow))
         {
             this.sr.flipX = true;
-            //this.anim.SetBool("isClicking", true);
-        }
-        else
-        {
-            //this.anim.SetBool("isClicking", false);
         }
     }
 

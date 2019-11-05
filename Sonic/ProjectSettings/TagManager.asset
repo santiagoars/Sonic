@@ -10,6 +10,7 @@ TagManager:
   - void
   - ring
   - platform
+  - top
   layers:
   - Default
   - TransparentFX

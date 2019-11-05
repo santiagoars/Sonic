@@ -6,22 +6,23 @@ using UnityEngine.UI;
 public class Rings : MonoBehaviour
 {
 
+    public AudioClip ringSound; 
 
 
     // Start is called before the first frame update
     void Start()
     {
-
+        GetComponent<AudioSource>().playOnAwake = false;
+        GetComponent<AudioSource>().clip = ringSound;
     }
 
-    // Update is called once per frame
-    void Update()
+    private void OnTriggerEnter2D(Collider2D collision)
     {
+        if (collision.transform.tag.Equals("Player"))
+        {
+            Destroy(this.gameObject);
+        }
 
     }
 
-    private void OnCollisionEnter2D(Collision2D collision)
-    {
-        Destroy(this.gameObject);
-    }
 }

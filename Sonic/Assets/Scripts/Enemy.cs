@@ -20,7 +20,21 @@ public class Enemy : MonoBehaviour
     {
         if (collision.CompareTag("Player"))
         {
-            collision.GetComponent<Sonic>().damage();
+            if (collision.transform.position.y > transform.position.y + 0.1)
+            {
+                StartCoroutine(destroyEnemy());
+            }
+            else
+            {
+                collision.GetComponent<Sonic>().damage();
+            }
+
         }
+    }
+
+    IEnumerator destroyEnemy()
+    {
+        yield return new WaitForSeconds(0.1f);
+        Destroy(this.gameObject);
     }
 }
