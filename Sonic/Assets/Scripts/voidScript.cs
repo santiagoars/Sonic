@@ -1,6 +1,7 @@
-﻿using System.Collections;
+﻿    using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class voidScript : MonoBehaviour
 {
@@ -20,6 +21,8 @@ public class voidScript : MonoBehaviour
     {
         if (collision.CompareTag("Player"))
         {
+            Debug.Log("Reiniciando nivel por collider con void...");
+            SceneManager.LoadScene("GameOver");
             collision.GetComponent<Sonic>().respawn();
         }
     }

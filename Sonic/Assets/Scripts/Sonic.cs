@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 
 public class Sonic : MonoBehaviour
 {
@@ -10,10 +11,13 @@ public class Sonic : MonoBehaviour
     private Rigidbody2D rb;
     private SpriteRenderer sr;
     private Animator anim;
-    private float speed;
+    private float speed,
+                  speedV;
     private bool isGrounded;
     public bool shield = false;
-    public int health = 3;
+    public int health = 3,
+               resNum = 3,
+               jumpHeight = 8;
 
     public GameObject spriteShield;
     public Text scoreDisplay;
@@ -26,6 +30,7 @@ public class Sonic : MonoBehaviour
         this.sr = GetComponent<SpriteRenderer>();
         this.anim = GetComponent<Animator>();
         spriteShield.GetComponent<SpriteRenderer>().color = new Color(1f, 1f, 1f, 0f);
+        this.speedV = 15.0f;
     }
 
     // Update is called once per frame
@@ -35,7 +40,7 @@ public class Sonic : MonoBehaviour
         flipCharacter();
         detectJump();
         grounded();
-        isDead();
+        //isDead();
 
         this.scoreDisplay.text = "RINGS:" + this.score.ToString();
     }
@@ -51,12 +56,16 @@ public class Sonic : MonoBehaviour
         {
             this.score++;
         }
+        else if (collision.CompareTag("enemy"))
+        {
+            this.damage();
+        }
     }
 
     private void detectMovement()
     {
         float h = Input.GetAxis("Horizontal");
-        this.speed = h * 15 * Time.deltaTime;
+        this.speed = h * this.speedV * Time.deltaTime;
         transform.Translate(new Vector3(speed, 0, 0));
         if (isGrounded)
         {
@@ -65,13 +74,20 @@ public class Sonic : MonoBehaviour
         }
     }
 
-    private void isDead()
+    public void changeSpeed(float mult)
+    {
+        this.speedV *= mult;
+    }
+
+    /*private void isDead()
     {
         if (transform.position.y < -14)
         {
+            Debug.Log("Reiniciando nivel... por nivel de abajo");
+            SceneManager.LoadScene(SceneManager.GetActiveScene().name);
             respawn();
         }
-    }
+    }*/
 
     private void flipCharacter()
     {
@@ -89,7 +105,7 @@ public class Sonic : MonoBehaviour
     {
         if ((Input.GetKeyDown(KeyCode.UpArrow) || Input.GetKeyDown(KeyCode.Space)) && isGrounded)
         {
-            this.rb.velocity = Vector2.up * 8;
+            this.rb.velocity = Vector2.up * this.jumpHeight;
             isGrounded = false;
         }
     }
@@ -107,8 +123,17 @@ public class Sonic : MonoBehaviour
 
     public void respawn()
     {
-        this.health = 3;
-        this.transform.position = this.spawnRef.position;
+        this.resNum--;
+        if (resNum == 0)
+        {
+            SceneManager.LoadScene(SceneManager.GetActiveScene().name);
+        }
+        else
+        {
+            this.health = 3;
+            this.transform.position = this.spawnRef.position;
+        }
+        
     }
 
     public void heal()
@@ -143,6 +168,16 @@ public class Sonic : MonoBehaviour
     {
         spriteShield.GetComponent<SpriteRenderer>().color = new Color(1f, 1f, 1f, 0f);
         this.shield = false;
+    }
+
+    public void doubleJumpHeight()
+    {
+        this.jumpHeight *= 2;
+    }
+
+    public void halfJumpHeight()
+    {
+        this.jumpHeight /= 2;
     }
 
 }
