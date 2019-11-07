@@ -8,6 +8,9 @@ TagManager:
   - checkpoint
   - enemy
   - void
+  - ring
+  - platform
+  - top
   layers:
   - Default
   - TransparentFX
