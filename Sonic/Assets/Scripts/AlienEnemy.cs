@@ -17,6 +17,7 @@ public class AlienEnemy : MonoBehaviour
         this.sr = GetComponent<SpriteRenderer>();
         this.min = transform.position.x;
         this.max = min + 10;
+
     }
 
     // Update is called once per frame

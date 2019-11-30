@@ -4,6 +4,10 @@ using UnityEngine;
 
 public class Spring : MonoBehaviour
 {
+
+    public Sonic sonic;
+    public Transform referencia;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -18,9 +22,13 @@ public class Spring : MonoBehaviour
 
     private void OnCollisionEnter2D(Collision2D collision)
     {
-        if (collision.transform.tag.Equals("Player"))
+        if (sonic.minY.transform.position.y > referencia.transform.position.y)
         {
-            collision.transform.GetComponent<Rigidbody2D>().AddForce(25 * transform.up, ForceMode2D.Impulse);
+            if (collision.transform.name.Equals("Sonic"))
+            {
+                collision.transform.GetComponent<Rigidbody2D>().AddForce(25 * transform.up, ForceMode2D.Impulse);
+                sonic.isGrounded = false;
+            }
         }
     }
 }

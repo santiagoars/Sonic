@@ -20,7 +20,7 @@ public class Health : MonoBehaviour
     {
         if (collision.CompareTag("Player"))
         {
-            collision.GetComponent<Sonic>().heal();
+            //collision.GetComponent<Sonic>().heal();
             Debug.Log("Salud fue recogida.");
             Destroy(this.gameObject);
         }

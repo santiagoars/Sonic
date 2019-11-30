@@ -20,7 +20,9 @@ public class Rings : MonoBehaviour
     {
         if (collision.transform.tag.Equals("Player"))
         {
-            Destroy(this.gameObject);
+            GetComponent<SpriteRenderer>().enabled = false;
+            GetComponent<AudioSource>().Play();
+            GetComponent<BoxCollider2D>().enabled = false;
         }
 
     }

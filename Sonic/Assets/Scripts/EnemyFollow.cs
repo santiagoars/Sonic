@@ -22,17 +22,6 @@ public class EnemyFollow : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        if (collision.CompareTag("Player"))
-        {
-            if (collision.transform.position.y > transform.position.y + 0.1)
-            {
-                collision.transform.GetComponent<Rigidbody2D>().AddForce(25 * transform.up, ForceMode2D.Impulse);
-            }
-            else
-            {
-                collision.GetComponent<Sonic>().damage();
-            }
 
-        }
     }
 }

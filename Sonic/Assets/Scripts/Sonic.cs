@@ -7,16 +7,16 @@ using UnityEngine.SceneManagement;
 public class Sonic : MonoBehaviour
 {
     public Transform spawnRef;
-
+    public Transform minY;
+    public bool dam;
     private Rigidbody2D rb;
     private SpriteRenderer sr;
-    private Animator anim;
+    public Animator anim;
     private float speed,
                   speedV;
-    private bool isGrounded;
+    public bool isGrounded;
     public bool shield = false;
-    public int health = 3,
-               resNum = 3,
+    public int resNum = 3,
                jumpHeight = 8;
 
     public GameObject spriteShield;
@@ -40,9 +40,7 @@ public class Sonic : MonoBehaviour
         flipCharacter();
         detectJump();
         grounded();
-        //isDead();
-
-        this.scoreDisplay.text = "RINGS:" + this.score.ToString();
+        scoreToCanvas();
     }
 
     private void OnCollisionEnter2D(Collision2D collision)
@@ -50,15 +48,16 @@ public class Sonic : MonoBehaviour
         isGrounded = true;
     }
 
+    private void scoreToCanvas()
+    {
+        this.scoreDisplay.text = "RINGS:" + this.score.ToString();
+    }
+
     private void OnTriggerEnter2D(Collider2D collision)
     {
         if (collision.transform.tag.Equals("ring"))
         {
             this.score++;
-        }
-        else if (collision.CompareTag("enemy"))
-        {
-            this.damage();
         }
     }
 
@@ -79,15 +78,6 @@ public class Sonic : MonoBehaviour
         this.speedV *= mult;
     }
 
-    /*private void isDead()
-    {
-        if (transform.position.y < -14)
-        {
-            Debug.Log("Reiniciando nivel... por nivel de abajo");
-            SceneManager.LoadScene(SceneManager.GetActiveScene().name);
-            respawn();
-        }
-    }*/
 
     private void flipCharacter()
     {
@@ -130,16 +120,11 @@ public class Sonic : MonoBehaviour
         }
         else
         {
-            this.health = 3;
             this.transform.position = this.spawnRef.position;
         }
         
     }
 
-    public void heal()
-    {
-        this.health++;
-    }
 
     public void damage()
     {
@@ -148,13 +133,15 @@ public class Sonic : MonoBehaviour
             breakShield();
             return;
         }
-
-        this.health--;
-        Debug.Log("Vida restante:" + this.health);
-
-        if (this.health == 0)
+        else
         {
-            respawn();
+            this.score += -2;
+            if (this.score <= 0 && dam)
+            {
+                respawn();
+                this.dam = false;
+                this.score = 0;
+            }
         }
     }
 
@@ -179,5 +166,6 @@ public class Sonic : MonoBehaviour
     {
         this.jumpHeight /= 2;
     }
+
 
 }
