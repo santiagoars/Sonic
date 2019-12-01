@@ -12,6 +12,7 @@ public class Sonic : MonoBehaviour
     private Rigidbody2D rb;
     private SpriteRenderer sr;
     public Animator anim;
+    public LayerMask groundLayer;
     private float speed,
                   speedV;
     public bool isGrounded;
@@ -31,6 +32,7 @@ public class Sonic : MonoBehaviour
         this.anim = GetComponent<Animator>();
         spriteShield.GetComponent<SpriteRenderer>().color = new Color(1f, 1f, 1f, 0f);
         this.speedV = 15.0f;
+        this.score = 0;
     }
 
     // Update is called once per frame
@@ -39,14 +41,27 @@ public class Sonic : MonoBehaviour
         detectMovement();
         flipCharacter();
         detectJump();
-        grounded();
         scoreToCanvas();
+        jumpingAnim();
     }
 
-    private void OnCollisionEnter2D(Collision2D collision)
+
+    public bool isOnGround()
     {
-        isGrounded = true;
+        Vector2 position = transform.position;
+        Vector2 direction = Vector2.down;
+        float distance = 1f;
+
+        Debug.DrawRay(position, direction, Color.green);
+        RaycastHit2D hit = Physics2D.Raycast(position, direction, distance, groundLayer);
+        if (hit.collider != null)
+        {
+            return true;
+        }
+
+        return false;
     }
+
 
     private void scoreToCanvas()
     {
@@ -66,7 +81,7 @@ public class Sonic : MonoBehaviour
         float h = Input.GetAxis("Horizontal");
         this.speed = h * this.speedV * Time.deltaTime;
         transform.Translate(new Vector3(speed, 0, 0));
-        if (isGrounded)
+        if (isOnGround() == true)
         {
             this.anim.SetFloat("minSpeed", Mathf.Abs(speed));
             this.anim.SetFloat("Speed", Mathf.Abs(speed));
@@ -93,19 +108,18 @@ public class Sonic : MonoBehaviour
 
     private void detectJump()
     {
-        if ((Input.GetKeyDown(KeyCode.UpArrow) || Input.GetKeyDown(KeyCode.Space)) && isGrounded)
+        if ((Input.GetKeyDown(KeyCode.UpArrow) || Input.GetKeyDown(KeyCode.Space)) && isOnGround() == true)
         {
             this.rb.velocity = Vector2.up * this.jumpHeight;
-            isGrounded = false;
         }
     }
 
-    private void grounded()
+    private void jumpingAnim()
     {
-        if (isGrounded)
+        if (isOnGround() == true)
         {
             this.anim.SetBool("isJumping", false);
-        }else if (!isGrounded)
+        }else if (isOnGround() == false)
         {
             this.anim.SetBool("isJumping", true);
         }
