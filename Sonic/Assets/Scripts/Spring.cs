@@ -7,11 +7,14 @@ public class Spring : MonoBehaviour
 
     public Sonic sonic;
     public Transform referencia;
+    public AudioClip springSound;
+    public int force;
 
     // Start is called before the first frame update
     void Start()
     {
-        
+        this.GetComponent<AudioSource>().clip = this.springSound;
+        this.force = 25;
     }
 
     // Update is called once per frame
@@ -26,8 +29,10 @@ public class Spring : MonoBehaviour
         {
             if (collision.transform.name.Equals("Sonic"))
             {
-                collision.transform.GetComponent<Rigidbody2D>().AddForce(25 * transform.up, ForceMode2D.Impulse);
+                collision.transform.GetComponent<Rigidbody2D>().AddForce(this.force * transform.up, ForceMode2D.Impulse);
+                this.GetComponent<AudioSource>().Play();
                 sonic.isGrounded = false;
+                
             }
         }
     }

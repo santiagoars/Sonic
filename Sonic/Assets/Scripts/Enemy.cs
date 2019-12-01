@@ -10,9 +10,12 @@ public class Enemy : MonoBehaviour
     public int enemyType;
     public float speed;
     public float length;
+    public AudioClip oof;
 
     private Vector3 target;
     private float start, end;
+    private SpriteRenderer sr;
+    private AudioSource audioSr;
 
 
 
@@ -22,6 +25,9 @@ public class Enemy : MonoBehaviour
         this.target = transform.position;
         start = transform.position.x;
         end = transform.position.x + length;
+        this.sr = GetComponent<SpriteRenderer>();
+        this.audioSr = GetComponent<AudioSource>();
+        this.audioSr.clip = oof;
     }
 
     // Update is called once per frame
@@ -40,11 +46,13 @@ public class Enemy : MonoBehaviour
     {
         if (collision.CompareTag("Player"))
         {
-            if (sonic.minY.position.y > this.maxY.position.y)
+            if (sonic.minY.position.y > this.maxY.position.y || sonic.isOnGround() == false)
             {
-                StartCoroutine(destroyEnemy());
-                collision.transform.GetComponent<Rigidbody2D>().AddForce(25 * transform.up, ForceMode2D.Impulse);
-            }else if (sonic.minY.position.y <= this.maxY.position.y)
+                this.audioSr.Play();
+                GetComponent<SpriteRenderer>().enabled = false;
+                GetComponent<BoxCollider2D>().enabled = false;
+            }
+            else if (sonic.minY.position.y <= this.maxY.position.y)
             {
                 sonic.dam = true;
                 sonic.damage();
@@ -74,10 +82,12 @@ public class Enemy : MonoBehaviour
         if (transform.position.x.Equals(start))
         {
             target.x = end;
+            this.sr.flipX = true;
         }
         else if (transform.position.x.Equals(end))
         {
             target.x = start;
+            this.sr.flipX = false;
         }
 
         transform.position = Vector3.MoveTowards(transform.position, target, 2 * Time.deltaTime);

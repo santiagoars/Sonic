@@ -20,7 +20,9 @@ public class Slow : MonoBehaviour
     {
         if (collision.CompareTag("Player"))
         {
-            Destroy(this.gameObject);
+            this.GetComponent<SpriteRenderer>().enabled = false;
+            this.GetComponent<BoxCollider2D>().enabled = false;
+            this.GetComponent<AudioSource>().Play();
             collision.GetComponent<Sonic>().changeSpeed(0.5f);
             yield return new WaitForSeconds(7);
             collision.GetComponent<Sonic>().changeSpeed(2f);
