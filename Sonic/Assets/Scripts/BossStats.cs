@@ -3,18 +3,20 @@ using System.Collections.Generic;
 
 public class BossStats
 {
-    public bool canThrow = false;
-    public int health = 6; 
-    public float jumpHeight = 10.0f,
-                 movSpeed = 5.0f,
-                 stunTime = 1.5f;
+    public bool canThrow;
+    public int health; 
+    public float jumpHeight,
+                 movSpeed,
+                 stunTime,
+                 attackWait;
 
-    public BossStats(int h, float j, float m, float s, bool c)
+    public BossStats(int h, float j, float m, float s, float a, bool c)
     {
         this.health = h;
         this.jumpHeight = j;
         this.movSpeed = m;
         this.stunTime = s;
+        this.attackWait = a;
         this.canThrow = c;
     } 
 

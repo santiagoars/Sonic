@@ -24,6 +24,15 @@ public class Boss : MonoBehaviour
 
     }
 
+    IEnumerator bossAI()
+    {
+        yield return new WaitForSeconds(this.phases[stage].attackWait);
+        float dist = Vector3.Distance(transform.position, this.player.transform.position);
+        int attack = (int) Random.Range(0.0f, 3.0f);
+
+    }
+
+
     // Update is called once per frame
     void Update()
     {
