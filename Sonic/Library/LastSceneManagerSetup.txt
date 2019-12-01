@@ -1,4 +1,9 @@
 sceneSetups:
+<<<<<<< HEAD
 - path: Assets/Scenes/BossScene.unity
+=======
+- path: Assets/Scenes/Level2.unity
+>>>>>>> d892b5deb266a0037202c724608b132a1dbc87d1
   isLoaded: 1
   isActive: 1
+  isSubScene: 0
