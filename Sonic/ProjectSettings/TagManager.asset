@@ -12,6 +12,7 @@ TagManager:
   - platform
   - top
   - finish
+  - boss
   layers:
   - Default
   - TransparentFX
