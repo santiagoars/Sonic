@@ -30,7 +30,7 @@ public class Boss : MonoBehaviour
         
     }
     
-    private void damage()
+    IEnumerator damage()
     {
         this.phases[stage].health--;
         if(this.phases[stage].health == 0)

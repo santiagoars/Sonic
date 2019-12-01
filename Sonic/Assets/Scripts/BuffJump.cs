@@ -4,6 +4,8 @@ using UnityEngine;
 
 public class BuffJump : MonoBehaviour
 {
+
+
     // Start is called before the first frame update
     void Start()
     {
@@ -24,7 +26,6 @@ public class BuffJump : MonoBehaviour
             collision.GetComponent<Sonic>().doubleJumpHeight();
             yield return new WaitForSeconds(7);
             collision.GetComponent<Sonic>().halfJumpHeight();
-            
         }
     }
 }

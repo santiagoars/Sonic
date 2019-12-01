@@ -9,7 +9,7 @@ public class Sonic : MonoBehaviour
     public Transform spawnRef;
     public Transform minY;
     public bool dam;
-    private Rigidbody2D rb;
+    public Rigidbody2D rb;
     private SpriteRenderer sr;
     public Animator anim;
     public LayerMask groundLayer;

@@ -46,13 +46,13 @@ public class Enemy : MonoBehaviour
     {
         if (collision.CompareTag("Player"))
         {
-            if (sonic.minY.position.y > this.maxY.position.y || sonic.isOnGround() == false)
+            if ((sonic.minY.position.y > this.maxY.position.y || sonic.isOnGround() == false))
             {
                 this.audioSr.Play();
                 GetComponent<SpriteRenderer>().enabled = false;
                 GetComponent<BoxCollider2D>().enabled = false;
             }
-            else if (sonic.minY.position.y <= this.maxY.position.y)
+            else if ((sonic.minY.position.y <= this.maxY.position.y))
             {
                 sonic.dam = true;
                 sonic.damage();
@@ -97,5 +97,6 @@ public class Enemy : MonoBehaviour
     {
         transform.position = new Vector2(transform.position.x, Mathf.PingPong(Time.time * speed, length));
     }
+
 
 }
